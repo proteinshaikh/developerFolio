@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Java / Spring / JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1cY8rhJYKuCgegNd202RRIul7XCEY4FZT/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -52,9 +52,9 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡  Design and implement efficient microservices and RESTful APIs with Spring Boot"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡  Leverage the power of multi-threading and collections in Java for high-performance applications"
     )
   ],
 
@@ -87,10 +87,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
@@ -103,16 +99,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -124,23 +120,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "University Of Mumbai",
+      logo: require("./assets/images/muLogo.png"),
+      subHeader: "Bachelor of Engineering in Electronics and Telecommunication",
+      duration: "July 2012 - June 2016",
+           
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Wilson College",
+      logo: require("./assets/images/wilson.png"),
+      subHeader: "HSC",
+      duration: "June 2010 - May 2012",
+    },
+    {
+      schoolName: "St. Xavier's High School",
+      logo: require("./assets/images/xaviers.png"),
+      subHeader: "SSC",
+      duration: "June 2007 - May 2010",
     }
   ]
 };
@@ -151,16 +147,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Backend",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "70%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -169,35 +165,77 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Senior Software Developer",
+      company: "Mashreq Bank",
+      companylogo: require("./assets/images/mashreqLogo.png"),
+      date: "Oct 2023 – Present",
+      desc: "Designed, developed, and maintained microservices architecture for money transfer applications using Java Spring Boot.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+        "Implemented RESTful APIs to facilitate secure and efficient communication between microservices and external systems.",
+        "Integrated third-party payment gateways and financial APIs to enable seamless fund transfer functionality.",
+        "Optimized performance and scalability of microservices by employing industry best practices and design patterns.",
+        "Conducted thorough testing, including unit tests and integration tests, to ensure the reliability and stability of the money transfer platform."
+      ],
+      techStack: ["Java 8+", "Spring Boot", "Microservices", "MS SQL", "Kafka"]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Consultant",
+      company: "Saudi Investment Bank",
+      companylogo: require("./assets/images/saibLogo.png"),
+      date: "Apr 2023 – Sep 2023",
+      desc: "Project: Saudi Investment Bank- Travel Card App",
+      descBullets: [
+        "Designed and implemented a suite of microservices for a high traffic banking and travel card application to enhance functionality, improve user experience, and ensure scalability.",
+        "Developed services for various components of the app including but not limited to login, onboarding, card management, account management, fund transfers, and loyalty programs.",
+        "Adhered to and advocated for software development best practices and standards, including code reviews, source control management, build processes, testing, and operations."
+      ],
+      techStack: ["Java 8+", "Multithreading", "Collections", "Spring Boot", "Microservices", "MongoDB", "Kafka", "Kibana", "Docker", "Kubernetes", "Openshift", "Jenkins", "ArgoCD", "Jira"]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Consultant",
+      company: "Deloitte",
+      companylogo: require("./assets/images/deloitteLogo.png"),
+      date: "Sep 2020 – Feb 2023",
+      desc: "Project: The Kroger Company",
+      descBullets: [
+        "Developed custom logging for Spring-based applications, leveraging Microsoft Azure Application Insights to enhance application monitoring and troubleshooting.",
+        "Engineered reusable wrappers to enhance functionality across multiple APIs.",
+        "Updated and maintained existing microservices, adapting endpoints as needed to meet evolving project requirements."
+      ],
+      techStack: ["Java 8+", "Spring Boot", "Microservices", "Oracle SQL", "Docker", "Kubernetes", "Kafka"]
+    },
+    {
+      role: "Senior System Engineer",
+      company: "IBM",
+      companylogo: require("./assets/images/ibmLogo.png"),
+      date: "Feb 2020 – Sep 2020",
+      desc: "Project: Digital Experience B2B - Vodafone Germany",
+      descBullets: [
+        "Led the design process for microservices architecture, outlining the framework and components to meet application requirements effectively.",
+        "Utilized Java and Spring Boot to develop and enhance microservices."
+      ],
+      techStack: ["Java 8+", "Spring Boot", "Microservices", "Oracle SQL", "Docker", "Kubernetes"]
+    },
+    {
+      role: "Software Developer",
+      company: "LTI",
+      companylogo: require("./assets/images/ltiLogo.png"),
+      date: "Sep 2016 – Jan 2020",
+      desc: "Worked on multiple projects including Workstation - MyTask and Car Insurance.",
+      descBullets: [
+        "Developed the 'My Task' feature, enabling users to track assigned tasks and respective deadlines, thereby improving project management and user productivity.",
+        "Enhanced workstation microservices utilizing Core Java, Spring Boot 2.0, and Spring JPA.",
+        "Championed the creation of 'AutoInsure Dashboard,' a state-of-the-art platform dedicated to simplifying car insurance processes, from policy creation to claims processing.",
+        "Architected and developed core modules leveraging Java 8+, Spring Boot, and Microservices, optimizing the platform for high availability, concurrency, and seamless scalability."
+      ],
+      techStack: ["Java 8+", "Spring Boot", "Microservices", "Oracle SQL"]
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -237,7 +275,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -250,53 +288,19 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Microsoft Certified: Azure Fundamentals",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      image: require("./assets/images/azure.png"),
+      imageAlt: "Azure Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://www.credly.com/badges/ac459155-72b6-4f8c-ba8d-e05aef587c25?source=linked_in_profile"
         }
       ]
     },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
+   
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -306,24 +310,31 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "Passionate about developing innovative solutions, I enjoy writing and sharing my knowledge with others.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://proteinshaikh.blogspot.com/2023/03/understanding-and-avoiding-race.html",
+      title: "Understanding and Avoiding Race Conditions in Java",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Explore common pitfalls in Java concurrency and learn strategies to prevent race conditions in your applications."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@proteinshaikh/important-topics-and-notes-for-data-structures-and-algorithms-interview-for-product-based-companies-8dcb80e54218",
+      title: "Important Topics and Notes for Data Structures and Algorithms Interview",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "A comprehensive guide to essential topics and tips for acing data structures and algorithms interviews at top tech companies."
+    },
+    {
+      url: "https://proteinshaikh.blogspot.com/2023/03/microsoft-sql-server-vs-oracle-same-but.html",
+      title: "Microsoft SQL Server vs Oracle: Same but Different",
+      description:
+        "An in-depth comparison of Microsoft SQL Server and Oracle, examining their similarities, differences, and best use cases."
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Talks Sections
 
@@ -341,7 +352,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -354,7 +365,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -370,18 +381,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+971-55743 6491",
+  email_address: "zeeshanshaikhonline@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "javawithzeeshan", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
